@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
+import Image from "material-ui-image";
 
 
 
@@ -16,19 +17,22 @@ const Test = ( ) => {
         
         <div> 
             <Button onClick={() => setOpen(true)} > Open Modal </Button> 
-            <Modal open={open} onClose={() => setOpen(false)}>
-                <Box position="absolute" left="35%" top= "25%" float ="left" transform= "translate(-50%, -50%)"
+            <Modal open={open} onClose={() => setOpen(false)} 
+                sx={{display: "flex",
+                justifyContent: 'center',
+                padding: "40px",
+            }}>
+                <Box 
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        height: '500px',
-                        width: '500px',
+                        height: '800px',
+                        width: '1000px',
                         padding: '16px',
                         justifyContent: 'center',
                         textAlign: "center",
-                        
-                    
                 }}>
+                    <Image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
                     <h2 id="modal-title">Place Name</h2>
                     <h3>These are the hours</h3> 
                     <p id="modal-description">
