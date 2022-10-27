@@ -6,12 +6,11 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
-import Image from "material-ui-image";
 
 
 
 
-const Test = ( ) => {
+const Test = (props) => {
      const [open, setOpen] = useState(false);
     return (
         
@@ -32,14 +31,11 @@ const Test = ( ) => {
                         justifyContent: 'center',
                         textAlign: "center",
                 }}>
-                    <Image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
-                    <h2 id="modal-title">Place Name</h2>
-                    <h3>These are the hours</h3> 
+                    <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
+                    <h2 id="modal-title">{props.name}</h2>
+                    <h3>{props.hours}</h3> 
                     <p id="modal-description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book.</p>
+                        {props.description}</p>
                         <Box textAlign='center'>
                             <Button 
                                 size= "large"
