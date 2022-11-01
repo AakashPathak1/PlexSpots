@@ -1,38 +1,30 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Modal from './Modal'
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import Modal from './Modal';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
-
-export default function BasicCard() {
+export default function MultiActionAreaCard() {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          PlexSpot
-        </Typography>
-        <Typography variant="h5" component="div">
-          Study Spot Name
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          IMG of spot
-        </Typography>
-        <Typography variant="body2">
-          tags
-        </Typography>
-      </CardContent>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg"
+          alt="dungeon"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            The Dungeon
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Hours: 8am - 6am
+          </Typography>
+        </CardContent>
+      </CardActionArea>
       <CardActions>
         <Modal>Modal</Modal>
       </CardActions>
