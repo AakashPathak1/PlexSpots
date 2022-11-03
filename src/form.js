@@ -1,18 +1,45 @@
-// import React, {useState, useEffect} from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import Button from '@mui/material/Button';
-// import { Typography } from '@mui/material';
-// import { Box } from '@mui/material';
-// import {Modal} from '@mui/material';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import { Fab } from '@mui/material';
+import RoomIcon from '@mui/icons-material/Room';import { green } from '@mui/material/colors';
+;
 
 
 
 
-// const Form = (props) => {
-//      const [open, setOpen] = useState(false);
-//     return (
-//         <Button> Add your Spot!</Button>
+export default function MultilineTextFields() {
+  const [value, setValue] = React.useState('Controlled');
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value);
+  };
 
-//     )
+  return (
+    <Box
+      component="form"
+      sx={{
+        '& .MuiTextField-root': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <div>
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Multiline"
+          multiline
+          maxRows={4}
+          value={value}
+          onChange={handleChange}
+        />
+        <TextField
+          id="outlined-textarea"
+          label="Name"
+          placeholder="Placeholder"
+          multiline
+        />
+      </div>
+    </Box>
+  );
+}
