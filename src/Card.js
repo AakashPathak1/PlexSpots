@@ -7,9 +7,11 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import Modal from './Modal';
 
 export default function MultiActionAreaCard() {
+  //const [open, setOpen] = useState(false);
+
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea onClick={() => Modal.setOpen(true)}>
         <CardMedia
           component="img"
           height="140"
