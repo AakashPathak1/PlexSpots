@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Modal from './Modal';
 
-export default function MultiActionAreaCard() {
+export default function MultiActionAreaCard(props) {
   //const [open, setOpen] = useState(false);
 
   return (
@@ -20,10 +20,10 @@ export default function MultiActionAreaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            The Dungeon
+            {props.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Hours: 8am - 6am
+            {props.hours}
           </Typography>
         </CardContent>
       </CardActionArea>
