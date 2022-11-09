@@ -1,23 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { StyledEngineProvider } from '@mui/material/styles';
+import App from './App';
 
 
   
-class Intro extends React.Component {
-  render() {
-    return (
-      <div>
-        Our Website will be here :)
-      </div>
-    );
-  }
-}
-
+ReactDOM.createRoot(document.querySelector("#root")).render(
+  <React.StrictMode>
+    <StyledEngineProvider injectFirst>
+      <App />
+    </StyledEngineProvider>
+  </React.StrictMode>
+);
 
   
   // ========================================
-  
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Intro />);
-  
+root.render(<App />);
+
