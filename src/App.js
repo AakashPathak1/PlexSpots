@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Card from './Card'
 import Modal from './Modal';
+import SpotButton from './SpotButton';
 
 // export default function NestedGrid() {
 //   return (
@@ -33,6 +34,8 @@ function FormRow() {
 
 export default function NestedGrid() {
   return (
+    <div> 
+    <SpotButton/>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid container spacing={5}>
@@ -75,6 +78,7 @@ export default function NestedGrid() {
         </Grid>
       </Grid>
     </Box>
+    </div>
   );
 }
 

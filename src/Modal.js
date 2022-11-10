@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
-import Card from './Card';
+// import SwipeableTextMobileStepper from './carousel';
 
 
 
@@ -15,7 +15,7 @@ const Test = (props) => {
     return (
         
         <div> 
-            <Button onClick={() => setOpen(true)} > Card </Button> 
+            <Button onClick={() => setOpen(true)} > Open Modal </Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'center',
@@ -31,7 +31,7 @@ const Test = (props) => {
                         justifyContent: 'center',
                         textAlign: "center",
                 }}>
-                    <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
+                    {/* <SwipeableTextMobileStepper></SwipeableTextMobileStepper> */}
                     <h2 id="modal-title">{props.name}</h2>
                     <h3>{props.hours}</h3> 
                     <p id="modal-description">
