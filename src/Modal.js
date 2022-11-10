@@ -15,7 +15,7 @@ const Test = (props) => {
     return (
         
         <div> 
-            <Button onClick={() => setOpen(true)} > Open Modal </Button> 
+            <Button onClick={() => setOpen(true)} > More Info </Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'center',
@@ -41,10 +41,9 @@ const Test = (props) => {
                                 size= "large"
                                 variant="contained" 
                                 onClick={() => setOpen(false)}>
-                                     Click Me
+                                     Close
                                      </Button>
                         </Box>
-
                 </Box>
             </Modal>
 
