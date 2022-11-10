@@ -11,7 +11,7 @@ import RoomIcon from '@mui/icons-material/Room';import { green } from '@mui/mate
 export default function MultilineTextFields() {
   const [value, setValue] = React.useState('Controlled');
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event) => {
     setValue(event.target.value);
   };
 

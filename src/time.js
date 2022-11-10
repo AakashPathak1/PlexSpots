@@ -6,14 +6,14 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DesktopTimePicker } from '@mui/x-date-pickers/DesktopTimePicker';
 
-export default function ResponsiveTimePickers() {
+export default function ResponsiveTimePickers(props) {
   const [value, setValue] = React.useState(dayjs('2018-01-01T00:00:00.000Z'));
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Stack spacing={3}>
         <DesktopTimePicker
-          label="For desktop"
+          label= {props.name}
           value={value}
           onChange={(newValue) => {
             setValue(newValue);

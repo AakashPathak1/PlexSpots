@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
+import SwipeableTextMobileStepper from './carousel';
 
 
 
@@ -31,7 +32,7 @@ const Test = (props) => {
                         justifyContent: 'center',
                         textAlign: "center",
                 }}>
-                    <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
+                    {/* <SwipeableTextMobileStepper></SwipeableTextMobileStepper> */}
                     <h2 id="modal-title">{props.name}</h2>
                     <h3>{props.hours}</h3> 
                     <p id="modal-description">

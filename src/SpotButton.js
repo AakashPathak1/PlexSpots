@@ -79,6 +79,17 @@ const SpotButton = (props) => {
                           renderInput={(params) => <TextField {...params} />}
                         />
                     </LocalizationProvider> */}
+                    <Box sx={{
+                          
+                          backgroundColor: 'white',
+                          color: 'black',
+                          padding: '16px',
+                          justifyContent: 'center',
+                          textAlign: "center",
+                          '& .MuiTextField-root': { m: 1, width: '25ch' },}}>
+                    <ResponsiveTimePickers name="From"></ResponsiveTimePickers>
+                    <ResponsiveTimePickers name="To"></ResponsiveTimePickers>
+                    </Box>
                     <FormControl fullWidth>
                             
                             <InputLabel>Description</InputLabel>
@@ -86,9 +97,7 @@ const SpotButton = (props) => {
                             '& .MuiTextField-root': { m: 1, n: 10}}}></OutlinedInput>
                       
                     </FormControl>
-                    <div>
-                    <ResponsiveTimePickers></ResponsiveTimePickers>
-                    </div>
+                    
                     
 
                     <Box 
@@ -103,11 +112,11 @@ const SpotButton = (props) => {
                    </Box>
 
                     
-                    <Box sx={{padding:"16px",}}>
+                    <Box sx={{padding:"16px"}}>
                         <Fab variant="extended" color="success" onClick={()=> setOpen(false)}>
                         Submit
                     </Fab>
-                    <Button variant="contained" component="label">
+                    <Button variant="contained" component="label" color="success" sx={{margin:"16px"}}>
                             Upload
                         <input hidden accept="image/*" multiple type="file" />
                     </Button>
