@@ -66,15 +66,6 @@ export default function NestedGrid() {
           <Grid item xs={4}>
             <Card img="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg" title = 'The blah'>Card</Card>
           </Grid>
-          <Grid item xs={4}>
-            <Card img="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg" title = 'The blah'>Card</Card>
-          </Grid>
-          <Grid item xs={4}>
-            <Card img="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg" title = 'The blah'>Card</Card>
-          </Grid>
-          <Grid item xs={4}>
-            <Card img="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg" title = 'The blah'>Card</Card>
-          </Grid>
         </Grid>
       </Grid>
     </Box>
