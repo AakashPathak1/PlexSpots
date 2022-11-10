@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
+import Card from './Card';
 
 
 
@@ -14,6 +15,7 @@ const Test = (props) => {
     return (
         
         <div> 
+            <Button onClick={() => setOpen(true)} > Card </Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'center',

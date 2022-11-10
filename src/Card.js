@@ -6,23 +6,33 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Modal from './Modal';
 
-export default function MultiActionAreaCard() {
+export default function MultiActionAreaCard(props) {
   //const [open, setOpen] = useState(false);
+
+  // image="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg"
+  // <Typography gutterBottom variant="h5" component="div" classname="study_title">
+  //           The Dungeon
+  //         </Typography>
+  //         <Typography variant="body2" color="text.secondary" classname="study_hours">
+  //           Hours: 8am - 6am
+  //         </Typography>
+
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea onClick={() => Modal.setOpen(true)}>
+      <CardActionArea>
         <CardMedia
           component="img"
+          classname="study_img"
           height="140"
-          image="https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg"
+          image={props.img}
           alt="dungeon"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            The Dungeon
+          <Typography gutterBottom variant="h5" component="div" classname="study_title">
+            {props.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" classname="study_hours">
             Hours: 8am - 6am
           </Typography>
         </CardContent>
