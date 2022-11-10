@@ -20,20 +20,16 @@ export default function NestedGrid() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid container item spacing={5}>
-          <FormRow name="moffat" hours="6-8pm"/>
-          <FormRow name="main stakcs" hours="6-8pm"/>
-          <FormRow name="nee"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
-          <FormRow name="hello"/>
+          <Grid item xs={4}>
+            <Card name="main stacks" hours="6-8pm"> </Card>
+          </Grid>
+          <Grid item xs={4}>
+            <Card name="main stacks" hours="6-8pm"> </Card>
+          </Grid>
+          <Grid item xs={4}>
+            <Card name="main stacks" hours="6-8pm"> </Card>
+          </Grid>
+          
         </Grid>
       </Grid>
     </Box>
