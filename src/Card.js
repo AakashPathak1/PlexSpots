@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActionArea, CardActions, Chip} from '@mui/material';
 import Modal from './Modal';
 
 export default function MultiActionAreaCard(props) {
@@ -32,9 +32,11 @@ export default function MultiActionAreaCard(props) {
           <Typography gutterBottom variant="h5" component="div" classname="study_title">
             {props.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary" classname="study_hours">
+          <Typography variant="body2" color="text.secondary" classname="study_hours" mb={1.5}>
             Hours: 8am - 6am
           </Typography>
+          <Chip label={props.tag1} color="primary"/>
+          <Chip label={props.tag2} color="primary"/>
         </CardContent>
       </CardActionArea>
       <CardActions>

@@ -15,7 +15,7 @@ const Test = (props) => {
     return (
         
         <div> 
-            <Button onClick={() => setOpen(true)} > Open Modal </Button> 
+            <Button onClick={() => setOpen(true)} > Learn More </Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'center',
