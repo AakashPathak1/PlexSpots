@@ -20,7 +20,7 @@ function App() {
 function GridSpots() {
   return (
     <>
-    <Box alignItems="center" justifyContent="center" mt={3}>
+    <Box alignitems="center" justifycontent="center" mt={3}>
       <Grid container spacing={1}>
         {Data.map((data, key) => (
             <Grid item key={key} xs={4}>

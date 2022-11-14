@@ -6,6 +6,7 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
 // import SwipeableTextMobileStepper from './carousel';
+// import Card from './Card';
 
 
 
@@ -15,7 +16,7 @@ const Test = (props) => {
     return (
         
         <div> 
-            <Button onClick={() => setOpen(true)} > Learn More </Button> 
+            <Button onClick={() => setOpen(true)}>Learn More</Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'center',
