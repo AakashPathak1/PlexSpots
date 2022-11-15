@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Modal} from '@mui/material';
+import Carousel, {CarouselItem} from './carousel.js';
 
 
 
@@ -15,10 +16,19 @@ const Test = (props) => {
     return (
         
         <div> 
-            <Button onClick={() => setOpen(true)} > Open Modal </Button> 
+            <Button onClick={() => setOpen(true)} sx={{
+                           backgroundColor: 'navy',
+                           color: 'white',
+                           height: '25px',
+                           width: '100px',
+                           padding: '40px',
+                           justifyContent: 'center',
+                           textAlign: "center",
+                           '& .MuiTextField-root': { m: 1, width: '25ch' },
+                   }}> Open Modal </Button> 
             <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
-                justifyContent: 'center',
+                justifyContent: 'justify',
                 padding: "40px",
             }}>
                 <Box 
@@ -41,7 +51,7 @@ const Test = (props) => {
                                 size= "large"
                                 variant="contained" 
                                 onClick={() => setOpen(false)}>
-                                     Click Me
+                                     Cancel
                                      </Button>
                         </Box>
 
@@ -56,3 +66,4 @@ const Test = (props) => {
 };
 
 export default Test;
+
