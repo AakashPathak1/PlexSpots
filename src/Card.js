@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Chip, Box, Modal} from '@mui/material';
 import { useState } from 'react';
+import Modalx from './Modal';
 import Data from './data.json';
 
 export default function StudyCard(props) {
@@ -45,6 +46,7 @@ export default function StudyCard(props) {
         justifyContent: 'center',
         padding: "40px",
         }}>
+       
         <Box 
           sx={{
               backgroundColor: 'white',

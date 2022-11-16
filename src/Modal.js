@@ -11,7 +11,7 @@ import {Modal} from '@mui/material';
 
 
 
-const Test = (props) => {
+const Modalx = (props) => {
      const [open, setOpen] = useState(false);
     return (
         
@@ -55,4 +55,4 @@ const Test = (props) => {
 
 };
 
-export default Test;
+export default Modalx;
