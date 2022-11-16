@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "img": "https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg",
+        "title": "Moffitt Library",
+        "tags": ["Outlets", "Bathrooms"]
+    },
+    {
+        "_id": 2,
+        "img": "https://dailycal.org/wp-content/uploads/2015/02/IMG_2414-e1423255186483-698x450.jpg",
+        "title": "Doe Library",
+        "tags": ["Outlets", "Bathrooms", "Quiet"]
+    },
+    {
+        "_id": 3,
+        "img": "https://i0.wp.com/live.staticflickr.com/65535/49899187961_73ca95e85b_h.jpg?resize=1600%2C1067&ssl=1",
+        "title": "East Asian Library",
+        "tags": ["Outlets", "Bathrooms", "Quiet", "On Campus"]
+    },
+    {
+        "_id": 4,
+        "img": "https://fastly.4sqi.net/img/general/600x600/695717_eBSMcge_fOfSIbhC0hSszIOds2b6gMjC-9VKMmy2DCY.jpg",
+        "title": "Kresge Engineering Library",
+        "tags": ["Outlets", "Bathrooms", "On Campus"]
+    },
+    {
+        "_id": 5,
+        "img":"https://s3.amazonaws.com/libapps/accounts/20577/images/study-areas.gif", 
+        "title": "Natural Resources Library",
+        "tags": ["Outlets", "Bathrooms", "On Campus"]
+    },
+    {
+        "_id": 6,
+        "img": "https://sodoicoffee.com/wp-content/uploads/2015/03/20161219_124842-1024x576.jpg",
+        "title": "Sodoi Coffee Tasting House",
+        "tags": ["Outlets", "Wifi", "Cafe"]
+    },
+    {
+        "_id": 7,
+        "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2013/10/ETS_StradaEntrance.jpg?resize=720%2C480&ssl=1", 
+        "title": "Caffe Strada",
+        "tags": ["Outlets", "Bathrooms", "Cafe"]
+    },
+    {
+        "_id": 8,
+        "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2012/09/Asha-Tea-House.jpeg?fit=600%2C386&ssl=1",
+        "title": "Asha Tea House",
+        "tags": ["Outlets", "Cafe", "Downtown"]
+    },
+    {
+        "_id": 9,
+        "img": "https://rtl.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/general/wheeler24.jpeg?itok=0RJvscVg&timestamp=1647366381",
+        "title": "Wheeler Hall",
+        "tags": ["Outlets", "Reservation"]
+    }
+]

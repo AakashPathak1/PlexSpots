@@ -13,6 +13,7 @@ import { PhotoCamera } from '@mui/icons-material';
 import Button from '@mui/material/Button';
 import TextRating from './Rating'
 import ResponsiveTimePickers from './time';
+import { Add } from '@mui/icons-material';
 // import dayjs, { Dayjs } from 'dayjs';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 // import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -31,10 +32,9 @@ const SpotButton = (props) => {
    return (
        
         <div> 
-            <Fab variant="extended" onClick={()=> setOpen(true)}>
-                <RoomIcon sx={{ mr: 1, color: "green"}} />
-                    Add your Spot
-            </Fab>
+            <IconButton type="button" variant="extended" onClick={()=> setOpen(true)}>
+              <Add />
+            </IconButton>
                <Modal open={open} onClose={() => setOpen(false)} 
                    sx={{display: "flex",
                    justifyContent: 'center',
