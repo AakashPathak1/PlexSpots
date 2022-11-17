@@ -80,7 +80,7 @@ const SpotButton = (props) => {
                         />
                     </LocalizationProvider> */}
                     <Box sx={{
-                          
+                          display: 'flex',
                           backgroundColor: 'white',
                           color: 'black',
                           padding: '16px',
@@ -89,17 +89,26 @@ const SpotButton = (props) => {
                           '& .MuiTextField-root': { m: 1, width: '25ch' },}}>
                     <ResponsiveTimePickers name="From"></ResponsiveTimePickers>
                     <ResponsiveTimePickers name="To"></ResponsiveTimePickers>
+        
                     </Box>
                     <FormControl fullWidth>
                             
                             <InputLabel>Description</InputLabel>
                             <OutlinedInput sx={{
-                            '& .MuiTextField-root': { m: 1, n: 10}}}></OutlinedInput>
-                      
+                            '& .MuiTextField-root': { m: 1, n: 10}}}></OutlinedInput>                      
                     </FormControl>
+                    <FormControl fullWidth >
+                            
+                            <InputLabel>Image URL</InputLabel>
+                            <OutlinedInput sx={{
+                            '& .MuiTextField-root': { m: 1, n: 10}}}></OutlinedInput>                      
+                    </FormControl>
+                            
+                            
+                      
+        
                     
-                    
-
+                  
                     <Box 
                     component="form"
                        sx={{
@@ -116,14 +125,15 @@ const SpotButton = (props) => {
                         <Fab variant="extended" color="success" onClick={()=> setOpen(false)}>
                         Submit
                     </Fab>
-                    <Button variant="contained" component="label" color="success" sx={{margin:"16px"}}>
+                    {/* <Button variant="contained" component="label" color="success" sx={{margin:"16px"}}>
                             Upload
                         <input hidden accept="image/*" multiple type="file" />
-                    </Button>
-                    <IconButton color="success" aria-label="upload picture" component="label">
+                    </Button> */}
+
+                    {/* <IconButton color="success" aria-label="upload picture" component="label">
                       <input hidden accept="image/*" type="file" />
                       <PhotoCamera />
-                    </IconButton>
+                    </IconButton> */}
 
                     </Box>
                     

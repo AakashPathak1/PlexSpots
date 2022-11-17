@@ -57,8 +57,7 @@ export default function StudyCard(props) {
               justifyContent: 'center',
               textAlign: "center",
           }}>
-          {/* <SwipeableTextMobileStepper></SwipeableTextMobileStepper> */}
-          <h2 id="modal-title">{props.name}</h2>
+          <h2 id="modal-title">{props.title}</h2>
           <h3>{props.hours}</h3> 
           <p id="modal-description">
               {props.description}</p>

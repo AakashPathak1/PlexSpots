@@ -3,54 +3,72 @@
         "id": 1,
         "img": "https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg",
         "title": "Moffitt Library",
-        "tags": ["Outlets", "Bathrooms"]
+        "tags": ["Outlets", "Bathrooms"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 2,
         "img": "https://dailycal.org/wp-content/uploads/2015/02/IMG_2414-e1423255186483-698x450.jpg",
         "title": "Doe Library",
-        "tags": ["Outlets", "Bathrooms", "Quiet"]
+        "tags": ["Outlets", "Bathrooms", "Quiet"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 3,
         "img": "https://i0.wp.com/live.staticflickr.com/65535/49899187961_73ca95e85b_h.jpg?resize=1600%2C1067&ssl=1",
         "title": "East Asian Library",
-        "tags": ["Outlets", "Bathrooms", "Quiet", "On Campus"]
+        "tags": ["Outlets", "Bathrooms", "Quiet", "On Campus"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 4,
         "img": "https://fastly.4sqi.net/img/general/600x600/695717_eBSMcge_fOfSIbhC0hSszIOds2b6gMjC-9VKMmy2DCY.jpg",
         "title": "Kresge Engineering Library",
-        "tags": ["Outlets", "Bathrooms", "On Campus"]
+        "tags": ["Outlets", "Bathrooms", "On Campus"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 5,
         "img":"https://s3.amazonaws.com/libapps/accounts/20577/images/study-areas.gif", 
         "title": "Natural Resources Library",
-        "tags": ["Outlets", "Bathrooms", "On Campus"]
+        "tags": ["Outlets", "Bathrooms", "On Campus"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 6,
         "img": "https://sodoicoffee.com/wp-content/uploads/2015/03/20161219_124842-1024x576.jpg",
         "title": "Sodoi Coffee Tasting House",
-        "tags": ["Outlets", "Wifi", "Cafe"]
+        "tags": ["Outlets", "Wifi", "Cafe"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 7,
         "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2013/10/ETS_StradaEntrance.jpg?resize=720%2C480&ssl=1", 
         "title": "Caffe Strada",
-        "tags": ["Outlets", "Bathrooms", "Cafe"]
+        "tags": ["Outlets", "Bathrooms", "Cafe"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 8,
         "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2012/09/Asha-Tea-House.jpeg?fit=600%2C386&ssl=1",
         "title": "Asha Tea House",
-        "tags": ["Outlets", "Cafe", "Downtown"]
+        "tags": ["Outlets", "Cafe", "Downtown"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     },
     {
         "id": 8,
         "img": "https://rtl.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/general/wheeler24.jpeg?itok=0RJvscVg&timestamp=1647366381",
         "title": "Wheeler Hall",
-        "tags": ["Outlets", "Reservation"]
+        "tags": ["Outlets", "Reservation"],
+        "description": "McDonald's Corporation is an American multinational fast food chain and real estate company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc (1902–1984), a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018.",
+        "hours": "6am-10pm"
     }
 ]

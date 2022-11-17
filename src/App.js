@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from './Card'
-import Modal from './Modal';
 import SpotButton from './SpotButton';
 import Navbar from './Navbar';
 import Data from "./data";
@@ -24,7 +23,7 @@ function GridSpots() {
       <Grid container spacing={1}>
         {Data.map((data, key) => (
             <Grid item key={key} xs={4}>
-              <Card img={data.img} title={data.title} tag1={data.tags[0]} tag2={data.tags[1]}> Card</Card>
+              <Card img={data.img} title={data.title} tag1={data.tags[0]} tag2={data.tags[1]} description= {data.description} hours= {data.hours}> Card</Card>
             </Grid>
           )
         )}
