@@ -2,6 +2,19 @@
     overflow: hidden;
 }
 
+.indicators {
+    display: flex;
+    justify-content: center;
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.indcators > button.active {
+    background-color: green;
+    color: #fff;
+}
 .inner {
     white-space: nowrap;
     transition: transform 0.3s;

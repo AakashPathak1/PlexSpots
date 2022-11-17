@@ -4,7 +4,6 @@ import MultilineTextFields from "./form";
 import './index.css';
 import Test from './modal.js';
 import SpotButton from './SpotButton';
-import Carousel, {CarouselItem} from './carousel.js';
 
 
 
@@ -21,11 +20,7 @@ class Intro extends React.Component {
               
                         />
           <div className="App">
-            <Carousel>
-              <CarouselItem>Item 1</CarouselItem>
-              <CarouselItem>Item 2</CarouselItem>
-              <CarouselItem>Item 3</CarouselItem>
-            </Carousel>
+            <p>hi</p>
           </div>
         {/* <MultilineTextFields/> */}
         <SpotButton/>
