@@ -42,10 +42,9 @@ const Modalx = (props) => {
                                 size= "large"
                                 variant="contained" 
                                 onClick={() => setOpen(false)}>
-                                     Click Me
+                                     Close
                                      </Button>
                         </Box>
-
                 </Box>
             </Modal>
 

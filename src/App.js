@@ -1,11 +1,13 @@
 import * as React from 'react';
+import axios from 'axios'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from './Card'
 import SpotButton from './SpotButton';
 import Navbar from './Navbar';
-import Data from "./data";
+// import Data from "./data";
 import { useEffect, useState } from 'react';
+import { ConstructionOutlined } from '@mui/icons-material';
 
 function App() {
   return (
@@ -17,6 +19,16 @@ function App() {
 }
 
 function GridSpots() {
+  const [Data, setData] = useState([])
+
+  useEffect(() => {
+    axios.get('/spots/all').then((res) => {
+      setData(res.data)
+      console.log(res.data)
+    })
+    
+  },[])
+
   return (
     <>
     <Box alignitems="center" justifycontent="center" mt={3}>

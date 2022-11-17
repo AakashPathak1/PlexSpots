@@ -59,14 +59,14 @@ const SpotButton = (props) => {
                     <div>
                       <TextField
                         id="outlined-textarea"
-                        label="Name"
-                        placeholder="Placeholder"
+                        label="Location"
+                        placeholder="Enter Location"
                         multiline
                       />
                        <TextField
                         id="outlined-textarea"
                         label="Address"
-                        placeholder="Placeholder"
+                        placeholder="Enter Address"
                         multiline
                       />
                     {/* <LocalizationProvider dateAdapter={AdapterDayjs}>

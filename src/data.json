@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "_id": 1,
         "img": "https://www.constructionspecifier.com/wp-content/uploads/2018/11/Opener-7.jpg",
         "title": "Moffitt Library",
         "tags": ["Outlets", "Bathrooms"],
@@ -8,7 +8,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 2,
+        "_id": 2,
         "img": "https://dailycal.org/wp-content/uploads/2015/02/IMG_2414-e1423255186483-698x450.jpg",
         "title": "Doe Library",
         "tags": ["Outlets", "Bathrooms", "Quiet"],
@@ -16,7 +16,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 3,
+        "_id": 3,
         "img": "https://i0.wp.com/live.staticflickr.com/65535/49899187961_73ca95e85b_h.jpg?resize=1600%2C1067&ssl=1",
         "title": "East Asian Library",
         "tags": ["Outlets", "Bathrooms", "Quiet", "On Campus"],
@@ -24,7 +24,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 4,
+        "_id": 4,
         "img": "https://fastly.4sqi.net/img/general/600x600/695717_eBSMcge_fOfSIbhC0hSszIOds2b6gMjC-9VKMmy2DCY.jpg",
         "title": "Kresge Engineering Library",
         "tags": ["Outlets", "Bathrooms", "On Campus"],
@@ -32,7 +32,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 5,
+        "_id": 5,
         "img":"https://s3.amazonaws.com/libapps/accounts/20577/images/study-areas.gif", 
         "title": "Natural Resources Library",
         "tags": ["Outlets", "Bathrooms", "On Campus"],
@@ -40,7 +40,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 6,
+        "_id": 6,
         "img": "https://sodoicoffee.com/wp-content/uploads/2015/03/20161219_124842-1024x576.jpg",
         "title": "Sodoi Coffee Tasting House",
         "tags": ["Outlets", "Wifi", "Cafe"],
@@ -48,7 +48,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 7,
+        "_id": 7,
         "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2013/10/ETS_StradaEntrance.jpg?resize=720%2C480&ssl=1", 
         "title": "Caffe Strada",
         "tags": ["Outlets", "Bathrooms", "Cafe"],
@@ -56,7 +56,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 8,
+        "_id": 8,
         "img": "https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2012/09/Asha-Tea-House.jpeg?fit=600%2C386&ssl=1",
         "title": "Asha Tea House",
         "tags": ["Outlets", "Cafe", "Downtown"],
@@ -64,7 +64,7 @@
         "hours": "6am-10pm"
     },
     {
-        "id": 8,
+        "_id": 9,
         "img": "https://rtl.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/general/wheeler24.jpeg?itok=0RJvscVg&timestamp=1647366381",
         "title": "Wheeler Hall",
         "tags": ["Outlets", "Reservation"],
