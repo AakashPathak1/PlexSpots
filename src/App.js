@@ -1,41 +1,20 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Card from './Card'
-import Modal from './Modal';
-import SpotButton from './SpotButton';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SpotsPage from './Spots';
 import Navbar from './Navbar';
-import Data from "./data";
-import { useEffect, useState } from 'react';
+import ExplorePage from './Explore';
 
 function App() {
   return (
     <>
+      <BrowserRouter>
       <Navbar/>
-      <GridSpots/>
-    </>
-  );
-}
-
-function GridSpots() {
-  return (
-    <>
-    <Box alignitems="center" justifycontent="center" mt={3}>
-      <Grid container spacing={1}>
-        {Data.map((data, key) => (
-            <Grid item key={key} xs={4}>
-              <Card img={data.img} title={data.title} tag1={data.tags[0]} tag2={data.tags[1]}> Card</Card>
-            </Grid>
-          )
-        )}
-      </Grid>
-    </Box>
+        <Routes>
+          <Route path='/' element={<SpotsPage/>}/>
+          <Route path='/explore' element={<ExplorePage/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
-
-
-
-

@@ -3,9 +3,15 @@
     text-align: center;
   }
 
-img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  margin-left: 0;
-  margin-right: 0;
+.headerBtn {
+  background: #ffffff;
+  border: none;
+  margin-left: 10;
 }
+
+.headerBtn:hover {
+  background-color: #ffffff;
+  cursor: pointer;  
+  color: orange;
+  margin-left: 10;
+} 

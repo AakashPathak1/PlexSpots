@@ -16,6 +16,9 @@ import { useState } from 'react';
 import Data from "./data.json";
 import SearchBar from "./Search";
 import { MenuItem } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import './styles.css';
+
 
 
 // function SearchBar() {
@@ -40,18 +43,36 @@ import { MenuItem } from '@mui/material';
 // }
 
 export default function NavBar() {
+  const navigate = useNavigate();
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" alignItems="center" justifyContent="center" style={{backgroundColor: "white", color: "black", mb: 15, padding: 4}}>
+    <Box sx={{ flexGrow: 1, m: 0 }}>
+      <AppBar position="static" style={{backgroundColor: "white", color: "black"}}>
         <Toolbar>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{flexgrow: 2, display: { xs: 'none', sm: 'block' }, mr: 30}}
+            sx={{flexgrow: 2, display: { xs: 'none', sm: 'block' }}}
           >
             PlexSpot
           </Typography>
+          <button 
+            className="headerBtn"
+            color="inherit" 
+            onClick={() => {
+              navigate('/')
+            }}>
+            Spots
+          </button>
+          <button 
+            className="headerBtn"
+            color="inherit" 
+            onClick={() => {
+              navigate('/explore')
+            }}>
+            Explore
+          </button>
           <SearchBar placeholder="Search for a spot" data={Data}/>
           <SpotButton/>
         </Toolbar>
