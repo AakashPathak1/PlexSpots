@@ -36,8 +36,8 @@ export default function StudyCard(props) {
           <Typography variant="body2" color="text.secondary" classname="study_hours" mb={1.5}>
             Hours: 8am - 6am
           </Typography>
-          <Chip label={props.tag1} color="primary"/>
-          <Chip label={props.tag2} color="primary"/>
+          <Chip label={props.tag1} sx={{ mx: 0 }} color="primary" variant="outlined"/>
+          <Chip label={props.tag2} sx={{ mx: 1 }} color="secondary" variant="outlined"/>
         </CardContent>
       </CardActionArea>
       <Modal open={open} onClose={() => setOpen(false)} 

@@ -14,7 +14,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import { useState } from 'react';
 import Data from "./data.json";
-import SearchBar from "./Search";
+import SearchBar from "./search";
 import { MenuItem } from '@mui/material';
 
 
