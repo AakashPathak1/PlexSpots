@@ -3,9 +3,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Chip, Box, Modal} from '@mui/material';
+import { Button, CardActionArea, CardActions, Chip, Box, Modal } from '@mui/material';
+import Carousel, {CarouselItem} from './carousel.js'
 import { useState } from 'react';
 import Data from './data.json';
+import Test from './Modal.js';
 
 export default function StudyCard(props) {
   //const [open, setOpen] = useState(false);
@@ -40,36 +42,59 @@ export default function StudyCard(props) {
           <Chip label={props.tag2} sx={{ mx: 1 }} color="secondary" variant="outlined"/>
         </CardContent>
       </CardActionArea>
+      {/* <Test name="Doe Library" hours="Mon-Fri (8am- 10pm)" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book." 
+                       
+                        /> */}
       <Modal open={open} onClose={() => setOpen(false)} 
-        sx={{display: "flex",
-        justifyContent: 'center',
-        padding: "40px",
-        }}>
-        <Box 
-          sx={{
-              backgroundColor: 'white',
-              color: 'black',
-              height: '800px',
-              width: '1000px',
-              padding: '16px',
-              justifyContent: 'center',
-              textAlign: "center",
-          }}>
-          {/* <SwipeableTextMobileStepper></SwipeableTextMobileStepper> */}
-          <h2 id="modal-title">{props.name}</h2>
-          <h3>{props.hours}</h3> 
-          <p id="modal-description">
-              {props.description}</p>
-          <Box textAlign='center'>
-              <Button 
-                  size= "large"
-                  variant="contained" 
-                  onClick={() => setOpen(false)}>
-                    Click Me
-              </Button>
-          </Box>
-        </Box>
-      </Modal>
+                sx={{display: "flex",
+                justifyContent: 'justify',
+                padding: "40px",
+                    }}>
+                <Box 
+                    sx={{
+                        align: 'center',
+                        backgroundColor: 'white',
+                        color: 'black',
+                        height: '800px',
+                        width: '1500px',
+                        padding: '16px',
+                        justifyContent: 'center',
+                        textAlign: "justified",
+                }}>
+                    <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
+                    <h2 id="modal-title">
+                        {props.title}</h2>
+                    <h3>{props.hours}</h3> 
+                        <div className="App">
+                            <Carousel>
+                                <img
+                                    src="https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/san-francisco/fidi/asha-tea-house/IMG_2173_299006722e285f47655d17d1c9136337.jpg"
+                                    alt="doe"/>
+                                <img
+                                    src="https://www.7x7.com/media-library/asha-tea-house-s-san-francisco-location-remains-closed-due-to-covid-19-but-its-east-bay-locations-are-open-for-takeout.jpg?id=28849600&width=1200&height=600"
+                                    alt="outside of doe"/>
+                                <img
+                                    src="https://d22ko7latny6xj.cloudfront.net/uploads/image/image/104517/large_o__33_.jpg"
+                                    alt="inside doe"/>                                    
+                            </Carousel>
+                        </div>                
+                        <h4>{props.address}</h4>
+                        <p id="modal-description">
+                            {props.description} </p>
+                        <Box textAlign='center'>
+                            <Button
+                                size= "large"
+                                variant="contained" 
+                                onClick={() => setOpen(false)}>
+                                     Cancel
+                                     </Button>
+                        </Box>
+
+                </Box>
+            </Modal>
     </Card>
   );
 }

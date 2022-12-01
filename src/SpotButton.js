@@ -53,22 +53,22 @@ const SpotButton = (props) => {
     const handleSpotCloseChange = e => {
       setSpotClose(e.target.value)
     }
-    
+
     const handleSubmit = (e) => {
-      e.preventDefault();
       addPosts(spotName, spotAddress, spotImage, spotDescription, spotOpen, spotClose);
     };
     
     const addPosts = (spotName, spotAddress, spotImage, spotDescription, spotOpen, spotClose) => {
-      client
-         .post('', {
-            name: spotName,
-            address: spotAddress,
-            image: spotImage, 
-            desc: spotDescription,
-            open: spotOpen, 
-            close: spotClose
-         })
+      var myParams = {
+        "title": spotName,
+        "img": spotImage, 
+        "tags": ["Outlets", "Wifi"],
+        /*"open": spotOpen,
+        "address": spotAddress,
+        "close": spotClose*/
+      }
+      console.log(myParams)
+      client.post("/spots/add", myParams)
       setSpotName('');
       setSpotAddress('');
       setSpotImage(''); 
