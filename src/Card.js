@@ -8,6 +8,9 @@ import { useState } from 'react';
 import Data from './data.json';
 import Carousel, {CarouselItem} from './carousel.js';
 import './carousel.css';
+import IconButton from '@mui/material/IconButton';
+import ClearIcon from '@mui/icons-material/Clear';
+import './styles.css';
 
 export default function StudyCard(props) {
   //const [open, setOpen] = useState(false);
@@ -43,58 +46,66 @@ export default function StudyCard(props) {
         </CardContent>
       </CardActionArea>
       <Modal open={open} onClose={() => setOpen(false)} 
-                sx={{display: "flex",
-                justifyContent: 'justify',
-                padding: "40px",
-                    }}>
-                <Box 
-                    sx={{
-                        align: 'center',
-                        backgroundColor: 'white',
-                        color: 'black',
-                        height: '800px',
-                        width: '1500px',
-                        padding: '16px',
-                        justifyContent: 'center',
-                        textAlign: "justified",
-                }}>
-                    <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
-                    <h2 id="modal-title">
-                        {props.title}</h2>
-                    <h3>{props.hours}</h3> 
-                        <div className="App">
-                        <Grid container spacing={2}>
-                        <Grid item xs={6}>
-                            <Carousel>
-                                <img
-                                    src="https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/san-francisco/fidi/asha-tea-house/IMG_2173_299006722e285f47655d17d1c9136337.jpg"
-                                    alt="doe"/>
-                                <img
-                                    src="https://www.7x7.com/media-library/asha-tea-house-s-san-francisco-location-remains-closed-due-to-covid-19-but-its-east-bay-locations-are-open-for-takeout.jpg?id=28849600&width=1200&height=600"
-                                    alt="outside of doe"/>
-                                <img className="hardCode"
-                                    src="https://d22ko7latny6xj.cloudfront.net/uploads/image/image/104517/large_o__33_.jpg"
-                                    alt="inside doe"/>                                    
-                            </Carousel>
-                            </Grid>
-                            <Grid item xs={6}>
-                            <Box>halskdfjow8yefshdij</Box>
-                            </Grid>
-                            </Grid>
-                        </div>                
-                        <h4>{props.address}</h4>
-                        <p id="modal-description">
-                            {props.description} </p>
-                        <Box textAlign='center'>
-                            <Button
-                                size= "large"
-                                variant="contained" 
-                                onClick={() => setOpen(false)}>
-                                     Cancel
-                                     </Button>
-                        </Box>
-                </Box>
-            </Modal>
+        sx={{display: "flex",
+        justifyContent: 'justify',
+        padding: "40px",
+            }}>
+        <Box 
+            sx={{
+                align: 'center',
+                backgroundColor: 'white',
+                color: 'black',
+                height: '800px',
+                width: '1500px',
+                padding: '16px',
+                justifyContent: 'center',
+                textAlign: "center",
+        }}>
+          <image src="/Doe_Library,_main_facade,_July_2018.jpeg/" alt="Moffit pic" />
+          <div>
+          <h2 id="modal-title">{props.title}</h2>
+          <IconButton aria-label="clear" onClick={() => setOpen(false)} className="xIcon">
+            <ClearIcon />
+          </IconButton>
+          </div>
+          
+          <h3>{props.hours}</h3> 
+            <div className="App">
+              <Grid container spacing={2}>
+              <Grid item xs={6}>
+                <Carousel>
+                    <img
+                        src="https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/san-francisco/fidi/asha-tea-house/IMG_2173_299006722e285f47655d17d1c9136337.jpg"
+                        alt="doe"/>
+                    <img
+                        src="https://www.7x7.com/media-library/asha-tea-house-s-san-francisco-location-remains-closed-due-to-covid-19-but-its-east-bay-locations-are-open-for-takeout.jpg?id=28849600&width=1200&height=600"
+                        alt="outside of doe"/>
+                    <img 
+                        src="https://d22ko7latny6xj.cloudfront.net/uploads/image/image/104517/large_o__33_.jpg"
+                        alt="inside doe"/>                                    
+                </Carousel>
+              </Grid>
+              <Grid item xs={6}>
+                  <Box>
+                  Hours: 
+Wednesday	10:30AM–7PM
+Thursday	10:30AM–7PM
+Friday	10:30AM–7PM
+Saturday	10:30AM–7PM
+Sunday	10:30AM–7PM
+Monday	10:30AM–7PM
+Tuesday	10:30AM–7PM
+Suggest new hours
+
+                  </Box>
+                  </Grid>
+                  </Grid>
+              </div>                
+              <h4>{props.address}</h4>
+              <p id="modal-description">
+                  {props.description} </p>
+      </Box>
+  </Modal>
     </Card>
   );
 }

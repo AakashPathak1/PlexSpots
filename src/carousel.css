@@ -35,3 +35,10 @@
   height: 300px;
   width: 500px;
 }
+
+.hardCode {
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+}

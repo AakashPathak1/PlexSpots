@@ -15,3 +15,9 @@
   color: orange;
   margin-left: 10;
 } 
+
+.xIcon {
+  position: absolute;
+  left: 48%;
+  bottom: 6.5%;
+}
