@@ -157,6 +157,7 @@ const SpotButton = (props) => {
                 onClick={()=> {
                   setOpen(false);
                   handleSubmit();
+                  window.location.reload(true);
                 }}>
                 Submit
               </Fab>

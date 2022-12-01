@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Chip, Box, Modal } from '@mui/material';
+import { Button, CardActionArea, CardActions, Chip, Box, Modal, Grid } from '@mui/material';
 import Carousel, {CarouselItem} from './carousel.js'
 import { useState } from 'react';
 import Data from './data.json';
@@ -42,12 +42,6 @@ export default function StudyCard(props) {
           <Chip label={props.tag2} sx={{ mx: 1 }} color="secondary" variant="outlined"/>
         </CardContent>
       </CardActionArea>
-      {/* <Test name="Doe Library" hours="Mon-Fri (8am- 10pm)" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book." 
-                       
-                        /> */}
       <Modal open={open} onClose={() => setOpen(false)} 
                 sx={{display: "flex",
                 justifyContent: 'justify',
@@ -69,6 +63,8 @@ export default function StudyCard(props) {
                         {props.title}</h2>
                     <h3>{props.hours}</h3> 
                         <div className="App">
+                          <Grid container spacing={2}>
+                          <Grid item xs={6}>
                             <Carousel>
                                 <img
                                     src="https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/san-francisco/fidi/asha-tea-house/IMG_2173_299006722e285f47655d17d1c9136337.jpg"
@@ -77,9 +73,21 @@ export default function StudyCard(props) {
                                     src="https://www.7x7.com/media-library/asha-tea-house-s-san-francisco-location-remains-closed-due-to-covid-19-but-its-east-bay-locations-are-open-for-takeout.jpg?id=28849600&width=1200&height=600"
                                     alt="outside of doe"/>
                                 <img
-                                    src="https://d22ko7latny6xj.cloudfront.net/uploads/image/image/104517/large_o__33_.jpg"
+                                    src="https://s.hdnux.com/photos/01/24/21/64/22093098/4/1200x0.jpg"
                                     alt="inside doe"/>                                    
                             </Carousel>
+                            </Grid>
+                            <Grid item xs={6}>
+                            <Box> There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea. At Asha, we strive to feed your love for tea by serving high-quality whole leaf tea and hand-crafted specialty tea beverages made with fresh, pure and real ingredients. Our tea selection is carefully curated as a result of extensive traveling and tasting. We make almost everything from scratch so that we know exactly what we're serving, we purposely limit our drink and tea selections to showcase a small but comprehensive representation of what the tea world has to offer, and we make a big effort to share everything we're learning as we help build America's tea culture. <p></p>
+                              But we also know that drinking tea isn't just about the drink. It's also about where you drink it and who you drink it with--which is why we designed every element of our tea house to maximize your tea-drinking enjoyment. 
+
+"Asha", after all, is Taiwanese for "someone that enjoys life", and our hope is that drinking Asha tea will remind you of the things you enjoy about life.
+
+<p></p>Asha Tea House is a venture started by David and Diana Lau, engineers by training but tea enthusiasts at heart. They were inspired by how Starbucks revolutionized the coffee industry by creating a "third home" for coffee lovers, and are huge fans of third-wave coffee companies like Blue Bottle and Intelligentsia Coffee that are devoted to further enhancing the coffee-drinking experience.
+
+Asha's team members are fiercely dedicated to quality and honesty, and we hope that our passion for tea and what we offer shines through with every sip.</Box>
+                            </Grid>
+                            </Grid>
                         </div>                
                         <h4>{props.address}</h4>
                         <p id="modal-description">
@@ -89,7 +97,7 @@ export default function StudyCard(props) {
                                 size= "large"
                                 variant="contained" 
                                 onClick={() => setOpen(false)}>
-                                     Cancel
+                                     Close
                                      </Button>
                         </Box>
 
