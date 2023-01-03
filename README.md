@@ -2,7 +2,10 @@
 
 -Plextech Fall 2022 Beginner Curriculum Final Project-
 
-This project is an interactive website catalog of different study and food "spots" in and around the UC Berkeley campus. Built using React for the front-end, pyMongo for the backend MongoDB database, and pyMongo for the API communication. 
+This project is an interactive website catalog of different study and food "spots" in and around the UC Berkeley campus. Built using:
+* React for the front-end 
+* `pyMongo` for the backend MongoDB database 
+* Flask for the API design 
 
 Supports:
   * User inputs of different spots info, including open/close timings and location. 
